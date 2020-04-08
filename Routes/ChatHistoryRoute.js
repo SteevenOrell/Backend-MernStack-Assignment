@@ -5,7 +5,7 @@ const UserHistmodel = require('../Model/ChatHistory');
 ChatHistoryRouter.route("").get((req,res)=>{
 
 //Welcome page Backend;
-//res.send('<h1>Welcome to the back-end page of Steeven Orell Wemin </h1>')
+res.send('<h1>Welcome to the back-end page of Steeven Orell Wemin </h1>')
 
 
 })
