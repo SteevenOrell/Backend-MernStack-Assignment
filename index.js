@@ -14,7 +14,8 @@ app.use(body_parser.json());
 app.use(body_parser.urlencoded({extended:false}));
 app.use(cors());
 
-//app.use(express.static(__dirname));
+app.use(express.static(__dirname));
+app.use(express.static(`${__dirname}/public`))
 app.use(["/api","/"],userChatRouter,eventLogsRouter,roomRooter,adminRouter) ;
 
 
